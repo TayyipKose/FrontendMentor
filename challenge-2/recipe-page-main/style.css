@@ -1,0 +1,138 @@
+body {
+  background-color: hsl(30, 54%, 90%);
+  min-height: 100vh;
+  display: block;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  margin: 0;
+  padding: 30px 40px; /* bu kritik! içerikler kutuya hizalanacak */
+  box-sizing: border-box; /* padding genişliği taşırmasın diye */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: hsl(24, 5%, 18%); /* Stone 900 gibi koyu */
+  margin-bottom: 0.5em;
+}
+
+.container {
+  background: white;
+  border-radius: 2%;
+  width: 500px;
+  height: 999px;
+  overflow-y: auto;
+  margin: 80px auto; /* üstten 80px boşluk, yatayda ortalanır */
+}
+img {
+  border-radius: 5% !important;
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+.top-text {
+  margin-left: 4.5%;
+}
+.first-list h5,
+h3 {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.first-list ul {
+  margin-top: 0;
+  margin-bottom: 3%;
+  font-size: 11px;
+}
+
+.first-list ul li::marker {
+  color: rgb(80, 29, 80);
+}
+
+.prep-wrapper {
+  background-color: rgba(255, 231, 240, 0.4);
+  width: 80%;
+  height: 80px;
+  margin-left: 5%;
+  padding: 8px 20px 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.prep-wrepper-items {
+  margin-bottom: 10px !important;
+}
+
+.prep-wrapper h4 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  color: purple;
+}
+
+.second-list ul,
+li {
+  margin-top: 0;
+  margin-bottom: 1%;
+  font-size: 11px;
+}
+
+.threed-list,
+p {
+  font-size: 12px;
+  margin-left: 3%;
+}
+
+.nutrition-info {
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-right: 10%;
+}
+
+hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/*burası en alttaki kalori tablosu*/
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0;
+}
+
+.label {
+  text-align: left;
+  flex: 1;
+  margin: 3.8px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.value {
+  text-align: center;
+  flex: 1;
+  margin: 3.8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #654321;
+}
+/*
+display: flex ile her satırı iki yana yaydık.
+justify-content: space-between ile label solda, değer sağda hizalanıyor.
+border-bottom ile satırların altına çizgi ekleniyor.
+flex: 1 her iki öğenin eşit yer kaplamasını sağlıyor, daha düzgün hizalanıyor.
+*/
